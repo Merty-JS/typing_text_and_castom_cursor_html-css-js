@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    cursor: none;
+}
+
+body {
+    background: #0d1b2a;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    width: 20ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from{width: 0ch;}
+}
+ 
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255,
+     255, 0.7);
+  
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation:  fadeOut 0.5s ease-out forwards;
+  }
+  
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+to {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
